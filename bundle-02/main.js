@@ -60,10 +60,10 @@ function checkAccess() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+    let grantAccess = false;
 
     if (addresses.includes(userEmail)) {
-        grantAccess = 'true';
+        grantAccess = true;
     }
 
     if (grantAccess === true) {
@@ -73,6 +73,10 @@ function checkAccess() {
     }
 }
 checkAccess();
+
+// 1. Questo codice verifica chiedendo all'utente di inserire la mail, se è nell'elenco di quelle che sono ammesse
+// 2. Ci sono due errori di sintassi, nei valori booleani true e false sono scritti con le virgolette, devono essere scritti senza
+// 3. Non ci sono errori di logica
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
