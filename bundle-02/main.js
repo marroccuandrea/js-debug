@@ -13,15 +13,21 @@
 // ESERCIZIO 1
 function checkAge() {
     const myAge = 32;
-    const message = '';
+    let message = '';
 
     if (myAge < 18) {
         message = `Sei troppo giovane! Hai ${myAge} anni!`;
     } else {
         message = 'Hai più di 18 anni!';
     }
+    return message;
 }
 checkAge();
+console.log(checkAge());
+
+// 1.Questo codice serve a capire se l'utente è maggiorenne o minorenne
+// 2. Non ci sono errori di sintassi
+// 3. Manca il return della funzione, senza di esso non si può portare il valore fuori da essa, in più message deve essere una let, sennò non può essere modificata
 
 // ESERCIZIO 2
 function printColorsNumber() {
@@ -88,32 +94,3 @@ function checkAccessImproved() {
         }
     }
     checkAccessImproved();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
