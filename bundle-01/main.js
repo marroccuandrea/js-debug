@@ -21,11 +21,16 @@ for (let i = 0; i < 5; i++) {
 
 // ESERCIZIO 2
 function addIfEven(num) {
-    if (num % 2 = 0) {
+    if (num % 2 == 0) {
         return num + 5;
     }
     return num;
 }
+
+// 1. Questo codice esprime una funzione che selezionerà solo numeri pari e lo restituirà aggiungendo 5
+// 2. Ci sono errori di sintassi, nell'operatore: num % 2 = 0, risulterà sempre pari e quindi aggiungerà sempre 5, anche ai numeri dispari.
+// 2. La soluzione sarà mettere due == anzichè uno solo
+// 3. Non ci sono errori logici
 
 
 // ESERCIZIO 3
