@@ -11,9 +11,12 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+for (let i = 0; i < 5; i++) {
     console.log(i);
 }
+// 1. Questo codice dovrebbe generare numeri da 0 a 4 (Conta fino a 5 ma non si vedrà perchè al 5 si interrompe il ciclo)
+// 2. Non sono presenti errori di sintassi
+// 3. Sono presenti errori logici, infatti per funzionare la condizione deve essere : i < 5
 
 
 // ESERCIZIO 2
