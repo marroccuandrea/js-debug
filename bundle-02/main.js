@@ -85,7 +85,7 @@ function checkAccessImproved() {
 
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+    let grantAccess = false;
 
     for (let i = 0; i < addresses.length; i++) {
         const email = addresses[i];
@@ -93,7 +93,7 @@ function checkAccessImproved() {
         if (userEmail.length > 5) {
 
             if (email === userEmail) {
-                grantAccess = 'true';
+                grantAccess = true;
 
             }
 
@@ -105,4 +105,9 @@ function checkAccessImproved() {
             console.log('Accesso negato!');
         }
     }
+}
     checkAccessImproved();
+
+    // 1. Questo codice è simile al precedente, ma con un controllo della lunghezza della mail inserita in più
+    // 2. Un errore di sintassi è la mancanza della graffa finale della funzione, e le variabili booleane true e false che sono tra virgolette
+    // 3. Non ci sono errori di logica
