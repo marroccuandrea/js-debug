@@ -44,11 +44,15 @@ printColorsNumber();
 // ESERCIZIO 3
 function addNumbers() {
     const userNumber = prompt('Inserisci un numero');
-    const total = userNumber + 12;
+    const total = parseInt(userNumber) + 12;
 
     console.log(`Il risultato finale è ${total}`);
 }
 addNumbers();
+
+// 1. Questo codice somma 12 ad un numero inserito a piacere dall'utente
+// 2. Non ci sono errori di sintassi
+// 3. C'è un errore logico, bisogna specificare che il numero inserito dall'utente sia un numero effettivo e non una stringa, con parseInt
 
 
 // ESERCIZIO 4
