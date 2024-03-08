@@ -56,23 +56,19 @@ const cars = [
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    },
     {
         manufacturer: 'Audi',
         model: 'R8',
         type: 'Benzina'
-    },
+    }
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type.toLowerCase() === 'benzina');
 
-const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
-});
+const dieselCars = cars.filter( (auto) => auto.type.toLowerCase() === 'diesel');
 
-const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
-});
+const otherCars = cars.filter( (auto) => auto.type.toLowerCase() !== 'benzina' && auto.type !== 'diesel');
 
 console.log('Auto a benzina');
 console.log('*******************************');
@@ -84,3 +80,7 @@ console.log(dieselCars);
 
 console.log('Tutte le altre auto');
 console.log(otherCars);
+
+// 1. Questo codice serve per organizzare in tre array i vari elementi nel primo array, dividendoli per tipologia di carburante
+// 2. Ci sono errori di sintassi, in un oggetto dell'array manca la virgola dopo la graffa, le arrow function non sono scritte correttamente, alla riga 67 il maggiore era prima dell'uguale
+// 3. C'è un errore logico alla riga 71, l'operatore OR || è sbagliato, deve essere and &&, in più bisogna mettere .toLowerCase, siccome i tipi di carburante sono scritti alcuni con la lettera iniziale maiuscola, alcuni con lettere minuscole
