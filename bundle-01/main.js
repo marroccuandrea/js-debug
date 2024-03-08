@@ -35,10 +35,13 @@ function addIfEven(num) {
 
 // ESERCIZIO 3
 function loopToFive() {
-    for (let i = 0, i < 5, i++) {
+    for (let i = 0; i < 5; i++) {
         console.log(i);
     }
 }
+// 1. Questo esercizio esprime una funzione che genera numeri da 0 a 4
+// 2. Sono presenti errori di sintassi, al posto delle virgole nel for ci va il punto e virgola
+// 3. Non sono presenti errrori di logica
 
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
